@@ -40,3 +40,5 @@ module.exports = function(deployTarget) {
   return ENV;
 };
 ```
+
+If you have sensitive data that is shared across environments, you can store that in a file in the root of your project called `.env`, though note that data in `.env.deploy.<deploy-target>` files will take precedence over data in `.env`.
